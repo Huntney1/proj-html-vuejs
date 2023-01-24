@@ -1,29 +1,64 @@
 <script>
+import AppNavbar from "./AppNavbar.vue"
+
 export default {
-    name: "AppHeader",
+  name: "AppHeader",
   data() {
     return {
-      /* lista voci nav-bar */
       menu: [
         {
           label: "Demos",
           url: "#",
           active: false,
+          sublabel: [
+            'Home 1',
+            'Home 2',
+            'Home 3',
+            'Home 4',
+            'Home 5',
+            'Home 6',
+            'Home 7',
+            'Home 8',
+            'Home 9',
+            'Home 10',
+            'Home 11',
+            'Leverage',
+          ] 
         },
         {
           label: "Pages",
           url: "#",
           active: true,
+          sublabel: [
+            "About Us",
+            "Service",
+            "Single Service",
+            "Pricing Table",
+            "Testimonials",
+            "Team",
+            "Partners",
+            "Contact Us",
+          ],
         },
         {
           label: "Potfolio",
           url: "#",
           active: false,
-        },
+          sublabel:[{
+            Full_Width:'2 columns',
+            With_Sidebar: '3 columns',
+            Single_Portfolio: '4 columns',
+        }],
+      },
         {
           label: "Blog",
           url: "#",
           active: false,
+          sublabel:[
+            'Full Width',
+            'With Sidebar',
+            'Single Post',
+          ]
         },
         {
           label: "Shop",
@@ -33,74 +68,82 @@ export default {
       ],
     };
   },
+    components:{
+      AppNavbar,
+    }
 };
 
 </script>
 
 <template lang="">
-    <header class="continer">
+  <header>
     <!-- NavBar -->
-    <div class="navbar d-flex justify-content-beatween">
-      <!-- logo dc -->
-      <a href="#" class="logo">
-        <img src="/img/nexgen-logo.svg" alt="Logo_NG" />
-      </a>
-      <!-- attivo lista nav bar -->
-      <nav>
-        <ul>
-          <li v-for="(item, index) in menu" :key="index">
-            <a :href="item.url" :class="item.active ? 'active' : ''">
-            {{ item.label }}</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <div class="navbar navbar-expand-lg">
+
+        <!-- logo NG -->
+        <div class="col-3">
+          <a  href="#" class="navbar-brand">
+            <img src="/img/nexgen-logo.svg" alt="Logo_NG" />
+          </a>
+        </div>
+
+          <!-- richiamo la lista alla nav bar -->
+        <div class="col-7 dropdown ">
+          
+            <!-- icone -->
+            <i class="bi bi-search"></i>
+            <i class="bi bi-handbag"></i>
+          
+        </div>
+        <AppNavbar :menu="menu"></AppNavbar>
+      </div>
+    </nav> 
   </header>
 </template>
 
 <style lang="scss" scoped>
+
     
-    .navbar {
+
+
+
+header{
+  background-color: #12565c;
+}
+.navbar {
   
-  align-items: center;
+    /* height: 125px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  height: 125px;
-  margin: 1em 0 0 0;
+    img {
+      width: 100px;
+    }
 
-  nav {
-    @include d-flex-cent;
-    height: 100%;
+
 
     ul {
       height: 100%;
       display: flex;
-      list-style: none;
+      text-decoration:none;
 
+      list-style: none;
+    
       li {
         height: 100%;
         padding: 10px;
-       /*  line-height: 1px; */
-       border-bottom: 3px solid white;
-        /* transition: border 0.3s; */
-        &.active {
-          /* color: $primary; */
-          border-bottom: 3px solid blue;
-          cursor: pointer;
-
-          a {
-            color: blue;
-          }
+        line-height: 1px;
+        color:#fff;
+                
+        a{
+          text-decoration:none;
+          color: #fff;
         }
-        &:hover {
-          border-bottom: blue;
-        }
-
-        a:hover{
-          border-bottom: blue
-        }
-      }
+        
+   
     }
   }
 }
-  
 </style>

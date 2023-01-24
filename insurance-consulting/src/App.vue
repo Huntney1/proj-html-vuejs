@@ -16,13 +16,14 @@ export default {
 <template>
   <div>
     <AppHeader />
-    <AppMain />
+    <!-- <AppMain /> -->
     <AppFooter />
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import 'node_modules/bootstrap/scss/bootstrap';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 * {
     margin: 0;
