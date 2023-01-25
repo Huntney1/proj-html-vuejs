@@ -118,7 +118,7 @@ header{
     justify-content: space-around;
     align-items: center;
 
-    img {
+   img {
       width: 100px;
     }
 

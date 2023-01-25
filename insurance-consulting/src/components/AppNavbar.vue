@@ -11,7 +11,7 @@ export default {
 
 <template lang="">
   <nav>
-    <ul class="nav nav-pills">
+    <ul class="nav nav-list">
       <li
         v-for="(item, index) in menu"
         :key="index"
@@ -39,21 +39,35 @@ export default {
   </nav>
 </template>
 <style lang="scss">
-.logo {
-  width: 150px;
-}
+  ul {
+      height: 100%;
+      display: flex;
+      text-decoration:none;
+
+      list-style: none;
+    
+        li {
+            height: 100%;
+            padding: 10px;
+            line-height: 1px;
+        a{
+            text-decoration:none;
+            color: #e2e3e7;
+        }
+        }
+    }
 .menuitem {
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  color: black;
+ 
 }
 .menuitem:hover {
-  color: #058283;
+  color: #132e43;
 }
 
 .dropbtn {
-  color: black;
+  color: #fff;
   padding: 16px;
   font-size: 16px;
   border: none;
