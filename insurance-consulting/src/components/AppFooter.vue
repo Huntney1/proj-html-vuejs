@@ -72,8 +72,9 @@ export default {
                     <!-- 2° sezione -->
                     <div class="col-12 col-md-6 col-lg-3 item">
                         <div class="card">
-                            <h3>Company</h3>
-                            
+                            <div class="title">
+                            <h2>Company</h2>
+                            </div>
                             <ul class="menu-Company">
                                 <li class="menu-item "><a href="#">Institutional</a></li>
                                 <li><a href="#">Social & Events</a></li>
@@ -88,7 +89,7 @@ export default {
                     <!-- 3° sezione -->
                     <div class="col-12 col-md-6 col-lg-3 item">
                         <div class="card">
-                            <h3>Services</h3>
+                            <h2>Services</h2>
                             
                             <ul class="menu-Company">
                                 <li class="menu-item "><a href="#">Audit & Assurance</a></li>
@@ -104,7 +105,7 @@ export default {
                     <!-- 4° sezione -->
                     <div class="col-12 col-md-6 col-lg-3 item">
                         <div class="card">
-                            <h3>Consultants</h3>
+                            <h2>Consultants</h2>
                             
                             <ul class="menu-Company">
                                 <li class="menu-item "><a href="#">David Cooper</a></li>
@@ -129,48 +130,54 @@ export default {
         background-color: $black-primary;
         color: $azz-secondary;
 
-        .paragraph{
-            
-            margin-left: 3.2em;
-        }
-
-        #logo-footer {
-            width: 8.5em;
-            margin-top: 3em;
-            margin-left: 3.1em;
-        }
-
-        .buy-button{
-            width: 13em;
-            height: 3.5em;
-            background-color: $black-primary;
-            border: 2px solid $blue-third;
-            border-radius: 2.5em;
-            color: $grey-secondary;
-            
-        }
-
-        .card{
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            padding: 35px;
-            border-radius: 10px;
-            border: none;
-            transition: all 0.4s ease-out 0s;
-            display: flex;
-            flex-direction: column;
-            min-width: 0;
-            word-wrap: b;
-        }
-
         .items{
             display: flex;
+        
+        
+            .paragraph{
+                margin-left: 3.2em;
+            }
 
+            #logo-footer {
+                width: 8.5em;
+                margin-top: 3em;
+                margin-left: 3.1em;
+            }
+
+            .buy-button{
+                width: 13em;
+                height: 3.5em;
+                background-color: $black-primary;
+                border: 2px solid $blue-third;
+                border-radius: 2.5em;
+                color: $grey-secondary;
+            }
+
+            .card{
+                position: relative;
+                z-index: 1;
+                /* width: 100%; */
+                margin-left: 1em;
+                margin-top: 2em;
+                padding: 30px;
+                text-align: left;
+                border-radius: 10px;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0,0,0,0.4)
+            }
+                // classe ul
             .menu-Company{ 
                 display: block;
+                width: 100%;
+
+                .menu-item{
+                    width: 100%;
+                }
+
             }
+            
         } 
-    
     }
 </style>

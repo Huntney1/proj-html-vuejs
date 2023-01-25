@@ -109,6 +109,7 @@ export default {
 
 header{
   background-color: #12565c;
+  width: 100%;
 }
 .navbar {
   
