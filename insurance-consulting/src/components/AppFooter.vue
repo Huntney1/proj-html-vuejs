@@ -9,7 +9,8 @@ export default {
 }
 </script>
 
-<template lang="">
+<template>
+    
     <footer>
         <section class="footer-main">
             <div class="container">
@@ -64,7 +65,7 @@ export default {
                             <li class="nav-item">
                                 <button type="button" class="buy-button">BUY NEXGEN</button>
                             </li>
-                            
+
                         </ul>
                     </div> 
 
@@ -99,8 +100,8 @@ export default {
                     
                         </div>
                     </div> 
+                    
                     <!-- 4° sezione -->
-
                     <div class="col-12 col-md-6 col-lg-3 item">
                         <div class="card">
                             <h3>Consultants</h3>
@@ -147,6 +148,24 @@ export default {
             border-radius: 2.5em;
             color: $grey-secondary;
             
+        }
+
+        .card{
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            padding: 35px;
+            border-radius: 10px;
+            border: none;
+            transition: all 0.4s ease-out 0s;
+        }
+
+        .items{
+            display: flex;
+
+            .menu-Company{ 
+                display: block;
+            }
         }
     
     }

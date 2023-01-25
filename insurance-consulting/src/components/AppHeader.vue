@@ -44,11 +44,11 @@ export default {
           label: "Potfolio",
           url: "#",
           active: false,
-          sublabel:[{
-            Full_Width:'2 columns',
-            With_Sidebar: '3 columns',
-            Single_Portfolio: '4 columns',
-        }],
+          sublabel:[
+            'Full Width',
+            'With Sidebar',
+            'Single Portfolio',
+        ],
       },
         {
           label: "Blog",
@@ -63,7 +63,7 @@ export default {
         {
           label: "Shop",
           url: "#",
-          active: false,
+          active: true,
         },
       ],
     };
@@ -88,15 +88,14 @@ export default {
           </a>
         </div>
 
-          <!-- richiamo la lista alla nav bar -->
-        <div class="col-7 dropdown ">
-          
-            <!-- icone -->
-            <i class="bi bi-search"></i>
-            <i class="bi bi-handbag"></i>
-          
-        </div>
+          <!-- richiamo la lista alla nav bar -->        
         <AppNavbar :menu="menu"></AppNavbar>
+
+        <!-- icone -->
+        <div class="icon-head">
+         <i class="bi bi-search"></i>
+          <i class="bi bi-handbag"></i>
+        </div>
       </div>
     </nav> 
   </header>
@@ -122,11 +121,13 @@ header{
       width: 100px;
     }
 
+    .icon-head{
+      color:white;
+    }
 
 
-    ul {
+   /*  ul {
       height: 100%;
-      display: flex;
       text-decoration:none;
 
       list-style: none;
@@ -144,6 +145,6 @@ header{
         
    
     }
-  }
+  } */
 }
 </style>
