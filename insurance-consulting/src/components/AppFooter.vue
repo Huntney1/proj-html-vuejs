@@ -14,6 +14,8 @@ export default {
         <section class="footer-main">
             <div class="container">
                 <div class="row items">
+
+                    <!-- 1° sezione -->
                     <div class="col-12 col-md-6 col-lg-3 item">
                         <!-- logo -->
                         <div class="content-block logo">
@@ -62,23 +64,64 @@ export default {
                             <li class="nav-item">
                                 <button type="button" class="buy-button">BUY NEXGEN</button>
                             </li>
+                            
                         </ul>
-
-
-
                     </div> 
+
+                    <!-- 2° sezione -->
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div class="card">
+                            <h3>Company</h3>
+                            
+                            <ul class="menu-Company">
+                                <li class="menu-item "><a href="#">Institutional</a></li>
+                                <li><a href="#">Social & Events</a></li>
+                                <li><a href="#">Innovation</a></li>
+                                <li><a href="#">Environment</a></li>
+                                <li><a href="#">Technology</a></li>
+                            </ul>
+                    
+                        </div>
+                    </div> 
+
+                    <!-- 3° sezione -->
+                    <div class="col-12 col-md-6 col-lg-3 item">
+                        <div class="card">
+                            <h3>Services</h3>
+                            
+                            <ul class="menu-Company">
+                                <li class="menu-item "><a href="#">Audit & Assurance</a></li>
+                                <li><a href="#">Financial Advisory</a></li>
+                                <li><a href="#">Analytics and M&A</a></li>
+                                <li><a href="#">Middle Marketing</a></li>
+                                <li><a href="#">Legal Consulting</a></li>
+                            </ul>
+                    
+                        </div>
+                    </div> 
+                    <!-- 4° sezione -->
 
                     <div class="col-12 col-md-6 col-lg-3 item">
-
+                        <div class="card">
+                            <h3>Consultants</h3>
+                            
+                            <ul class="menu-Company">
+                                <li class="menu-item "><a href="#">David Cooper</a></li>
+                                <li><a href="#">Oliver jones</a></li>
+                                <li><a href="#">Emma Lopez</a></li>
+                                <li><a href="#">T. Johnson</a></li>
+                                <li><a href="#">jacob Hill jr</a></li>
+                            </ul>
+                    
+                        </div>
                     </div> 
-                    <div class="col-12 col-md-6 col-lg-3 item"></div> 
-                    <div class="col-12 col-md-6 col-lg-3 item"></div> 
 
                 </div>
             </div> 
         </section>
     </footer>
 </template>
+
 <style lang="scss">
     @use "../style/partials/variables" as *;
     footer{
