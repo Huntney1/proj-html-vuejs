@@ -40,14 +40,13 @@ export default {
 </template>
 <style lang="scss">
   ul {
-      height: 100%;
       display: flex;
       text-decoration:none;
 
       list-style: none;
     
         li {
-            height: 100%;
+            /* height: 100%; */
             padding: 10px;
             line-height: 1px;
         a{

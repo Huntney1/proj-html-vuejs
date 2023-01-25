@@ -158,6 +158,10 @@ export default {
             border-radius: 10px;
             border: none;
             transition: all 0.4s ease-out 0s;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: b;
         }
 
         .items{
@@ -166,7 +170,7 @@ export default {
             .menu-Company{ 
                 display: block;
             }
-        }
+        } 
     
     }
 </style>
