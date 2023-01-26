@@ -8,6 +8,7 @@ export default {
   components:{
     AppNavbar,
     AppJumbotron,
+    
     },
 
   data() {
@@ -112,7 +113,9 @@ export default {
         </div>
       </div>
     </nav> 
+    <!-- richiamo il jumbotron -->
     <AppJumbotron />
+    
   </header>
 </template>
 
@@ -132,7 +135,7 @@ header{
     align-items: center;
 
    img {
-      width: 100px;
+      width: 8em;
     }
 
     .nav-item{
