@@ -48,7 +48,7 @@ export default {
         li {
             /* height: 100%; */
             padding: 10px;
-            line-height: 1px;
+           /*  line-height: 1px; */
         a{
             text-decoration:none;
             color: #e2e3e7;

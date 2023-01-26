@@ -1,5 +1,20 @@
 <script>
-export default {};
+export default {
+   name:'AppPrompt',
+   data() {
+    return {
+        number: 0
+    }
+   }, 
+   methods: {
+        increment() {
+            this.number++;
+        },
+        decrement() {
+            this.number--;
+        }
+    },
+};
 </script>
 
 <template lang="">
@@ -20,15 +35,27 @@ export default {};
         
             <div class="col-12 col-md-6 input-group">
                
-                <select class="form-control">
+                <div>
+                    <div @click="decrement"></div>
+                    <input type="number" v-model="number" placeholder="phone" class="form-control">
+                    <div @click="increment"></div>
+                </div>
+
+
+                <!-- <select class="form-control">
                     <option value="" disabled selected>Phone</option>
                     <option value="opzione1">Opzione 1</option>
                     <option value="opzione2">Opzione 2</option>
                     <option value="opzione3">Opzione 3</option>
-                </select>
+                </select> -->
+
+               
             </div>
             <div class="col-12 col-md-6 input-group">
                 
+            
+
+
             </div>
             
             
