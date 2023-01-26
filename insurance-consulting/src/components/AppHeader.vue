@@ -1,8 +1,15 @@
 <script>
-import AppNavbar from "./AppNavbar.vue"
+import AppNavbar from "./AppNavbar.vue";
+import AppJumbotron from "./AppJumbotron.vue";
 
 export default {
   name: "AppHeader",
+  
+  components:{
+    AppNavbar,
+    AppJumbotron,
+    },
+
   data() {
     return {
       menu: [
@@ -68,21 +75,21 @@ export default {
       ],
     };
   },
-    components:{
-      AppNavbar,
-    }
+    
 };
 
 </script>
 
 <template lang="">
+  
   <header>
+    
     <!-- NavBar -->
     <nav>
       <div class="navbar navbar-expand-lg">
 
         <!-- logo NG -->
-        <div class="col-3">
+        <div class="col-12">
           <a  href="#" class="navbar-brand">
             <img src="/img/nexgen-logo.svg" alt="Logo_NG" />
           </a>
@@ -93,22 +100,28 @@ export default {
 
         <!-- icone -->
         <div class="icon-head">
-         <i class="bi bi-search"></i>
+         <i class="bi bi-search "></i>
           <i class="bi bi-handbag"></i>
+        </div>
+
+        <!-- bottone -->
+        <div>
+          <li class="nav-item">
+            <button type="button" class="head-button">BUY NEXGEN</button>
+          </li>
         </div>
       </div>
     </nav> 
+    <AppJumbotron />
   </header>
 </template>
 
 <style lang="scss" scoped>
-
+ @use "../style/partials/variables" as *;
     
 
-
-
 header{
-  background-color: #12565c;
+  background-color: $blue-primary;
   width: 100%;
 }
 .navbar {
@@ -122,16 +135,35 @@ header{
       width: 100px;
     }
 
+    .nav-item{
+      list-style: none;
+       text-decoration:none;
+    }
+
+    .bi-search{
+      margin: 1em;
+    }
+
     .icon-head{
       color:white;
+      margin-right: 2em;
     }
 
 
+    .head-button{
+      width: 13em;
+      height: 3.5em;
+      background-color: $black-primary;
+      border: 2px solid $blue-third;
+      border-radius: 2.5em;
+      color: $grey-secondary;
+    }
+
    /*  ul {
       height: 100%;
-      text-decoration:none;
+     
 
-      list-style: none;
+      
     
       li {
         height: 100%;

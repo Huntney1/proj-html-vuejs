@@ -21,13 +21,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "./style/generals.scss" as *;
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 </style>

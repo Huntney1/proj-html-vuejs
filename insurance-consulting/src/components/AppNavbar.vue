@@ -16,7 +16,7 @@ export default {
         v-for="(item, index) in menu"
         :key="index"
         :class="item.active ? 'active' : ' '"
-        class="nav-item m-3 lista"
+        class="nav-item lista"
       >
         <div class="dropdown_">
           <div class="dropbtn">
@@ -38,11 +38,11 @@ export default {
     </ul>
   </nav>
 </template>
+
 <style lang="scss">
   ul {
       display: flex;
       text-decoration:none;
-
       list-style: none;
     
         li {
