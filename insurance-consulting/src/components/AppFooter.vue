@@ -77,10 +77,10 @@ export default {
                             </div>
                             <ul class="menu-Company">
                                 <li class="menu-item "><a href="#">Institutional</a></li>
-                                <li><a href="#">Social & Events</a></li>
-                                <li><a href="#">Innovation</a></li>
-                                <li><a href="#">Environment</a></li>
-                                <li><a href="#">Technology</a></li>
+                                <li class="menu-item "><a href="#">Social & Events</a></li>
+                                <li class="menu-item "><a href="#">Innovation</a></li>
+                                <li class="menu-item "><a href="#">Environment</a></li>
+                                <li class="menu-item "><a href="#">Technology</a></li>
                             </ul>
                     
                         </div>
@@ -93,10 +93,10 @@ export default {
                             
                             <ul class="menu-Company">
                                 <li class="menu-item "><a href="#">Audit & Assurance</a></li>
-                                <li><a href="#">Financial Advisory</a></li>
-                                <li><a href="#">Analytics and M&A</a></li>
-                                <li><a href="#">Middle Marketing</a></li>
-                                <li><a href="#">Legal Consulting</a></li>
+                                <li class="menu-item "><a href="#">Financial Advisory</a></li>
+                                <li class="menu-item "><a href="#">Analytics and M&A</a></li>
+                                <li class="menu-item "><a href="#">Middle Marketing</a></li>
+                                <li class="menu-item "><a href="#">Legal Consulting</a></li>
                             </ul>
                     
                         </div>
@@ -104,17 +104,17 @@ export default {
                     
                     <!-- 4° sezione -->
                     <div class="col-12 col-md-6 col-lg-3 item">
-                        <div class="card">
+                        <div class="card col-12 col-md-6 col-lg-3">
                             <h2>Consultants</h2>
-                            
+                            <div >
                             <ul class="menu-Company">
                                 <li class="menu-item "><a href="#">David Cooper</a></li>
-                                <li><a href="#">Oliver jones</a></li>
-                                <li><a href="#">Emma Lopez</a></li>
-                                <li><a href="#">T. Johnson</a></li>
-                                <li><a href="#">jacob Hill jr</a></li>
+                                <li class="menu-item "><a href="#">Oliver jones</a></li>
+                                <li class="menu-item "><a href="#">Emma Lopez</a></li>
+                                <li class="menu-item "><a href="#">T. Johnson</a></li>
+                                <li class="menu-item "><a href="#">jacob Hill jr</a></li>
                             </ul>
-                    
+                    </div>
                         </div>
                     </div> 
 
@@ -157,10 +157,10 @@ export default {
                 position: relative;
                 z-index: 1;
                 /* width: 100%; */
-                margin-left: 1em;
-                margin-top: 2em;
-                padding: 30px;
-                text-align: left;
+                margin: 0.5em;
+                margin-top: 3.5em;
+                padding: 10px;
+                /* text-align: center; */
                 border-radius: 10px;
                 border: none;
                 display: flex;
@@ -170,12 +170,12 @@ export default {
                 // classe ul
             .menu-Company{ 
                 display: block;
-                width: 100%;
+              /*   width: 100%;*/
 
                 .menu-item{
-                    width: 100%;
+                    text-align: left;
                 }
-
+ 
             }
             
         } 
